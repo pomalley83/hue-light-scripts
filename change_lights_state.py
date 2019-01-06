@@ -19,7 +19,7 @@ elif state == "off":
 else:
     state = "false"
 
-url = "http://" + ip_adress + "/api/" + user + "/lights/4/state"
+url = "http://" + ip_adress + "/api/" + user + "/lights/" + light_id + "/state"
 data = '''{
     "on":''' + state + '''
 }'''
